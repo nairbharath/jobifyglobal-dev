@@ -1,0 +1,169 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Hide scrollbar for webkit browsers */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+
+/* Jobify Recruitment Agency Design System */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap');
+
+@layer base {
+  :root {
+    /* Core Brand Colors */
+    --background: 0 0% 98%;
+    --foreground: 210 20% 15%;
+
+    /* Brand Identity */
+    --primary: 210 100% 20%; /* Deep Blue #003366 */
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 210 100% 25%;
+
+    /* Golden Accent */
+    --accent: 43 88% 52%; /* Golden #DAA520 */
+    --accent-foreground: 210 20% 15%;
+    --accent-light: 43 88% 85%;
+
+    /* Secondary Colors */
+    --secondary: 210 20% 96%;
+    --secondary-foreground: 210 20% 15%;
+
+    /* Trust & Success */
+    --success: 138 62% 47%;
+    --success-foreground: 0 0% 100%;
+    --trust: 210 100% 20%;
+
+    /* Cards & UI */
+    --card: 0 0% 100%;
+    --card-foreground: 210 20% 15%;
+
+    /* Form Elements */
+    --input: 210 40% 94%;
+    --input-foreground: 210 20% 15%;
+    --border: 210 40% 88%;
+    --ring: 43 88% 52%;
+
+    /* Interactive States */
+    --muted: 210 40% 96%;
+    --muted-foreground: 210 20% 55%;
+
+    /* Overlays */
+    --overlay: 210 20% 5%;
+    --overlay-light: 0 0% 100%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(43 88% 65%));
+    --gradient-trust: linear-gradient(to right, hsl(var(--primary)), hsl(var(--accent)));
+
+    /* Shadows */
+    --shadow-soft: 0 4px 6px -1px hsl(210 20% 15% / 0.1);
+    --shadow-medium: 0 10px 15px -3px hsl(210 20% 15% / 0.1);
+    --shadow-strong: 0 25px 50px -12px hsl(210 20% 15% / 0.25);
+    --shadow-accent: 0 4px 14px 0 hsl(var(--accent) / 0.3);
+
+    /* Spacing & Layout */
+    --radius: 0.75rem;
+    --radius-lg: 1rem;
+    --container-padding: 1rem;
+
+    /* Typography Scale */
+    --text-xs: 0.75rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-lg: 1.125rem;
+    --text-xl: 1.25rem;
+    --text-2xl: 1.5rem;
+    --text-3xl: 1.875rem;
+    --text-4xl: 2.25rem;
+    --text-5xl: 3rem;
+
+    /* Animation */
+    --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-fast: all 0.15s ease-out;
+  }
+
+  /* Mobile optimizations remain consistent */
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body;
+    line-height: 1.6;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-semibold;
+    line-height: 1.2;
+  }
+
+  /* Smooth scrolling for navigation */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Mobile touch optimizations */
+  button, a {
+    touch-action: manipulation;
+  }
+
+  /* Focus styles for accessibility */
+  *:focus-visible {
+    @apply outline-none ring-2 ring-accent ring-offset-2;
+  }
+}
+
+@layer components {
+  /* Hero section utilities */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+
+  .accent-gradient {
+    background: var(--gradient-accent);
+  }
+
+  /* Trust badges */
+  .trust-badge {
+    @apply bg-card border border-border rounded-lg p-4 shadow-soft;
+    transition: var(--transition);
+  }
+
+  .trust-badge:hover {
+    @apply shadow-medium;
+    transform: translateY(-2px);
+  }
+
+  /* Mobile-first button styles */
+  .btn-mobile {
+    @apply min-h-[3rem] px-6 text-base font-medium rounded-lg;
+    transition: var(--transition);
+  }
+
+  /* Glassmorphism effect */
+  .glass {
+    backdrop-filter: blur(10px);
+    background: hsl(var(--overlay-light) / 0.95);
+  }
+
+  /* Section spacing */
+  .section-padding {
+    @apply py-12 md:py-16 lg:py-20;
+  }
+
+  /* Container with max width */
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+}
