@@ -1,0 +1,17 @@
+export const countryCodes = [
+  { name: "India", code: "IN", dial_code: "+91" },
+  { name: "United Arab Emirates", code: "AE", dial_code: "+971" },
+  { name: "Saudi Arabia", code: "SA", dial_code: "+966" },
+  { name: "Qatar", code: "QA", dial_code: "+974" },
+  { name: "Kuwait", code: "KW", dial_code: "+965" },
+  { name: "Oman", code: "OM", dial_code: "+968" },
+  { name: "Bahrain", code: "BH", dial_code: "+973" },
+  { name: "Nepal", code: "NP", dial_code: "+977" },
+  { name: "Bangladesh", code: "BD", dial_code: "+880" },
+  { name: "Philippines", code: "PH", dial_code: "+63" },
+  { name: "Sri Lanka", code: "LK", dial_code: "+94" },
+  { name: "Pakistan", code: "PK", dial_code: "+92" },
+  { name: "Singapore", code: "SG", dial_code: "+65" },
+  { name: "United States", code: "US", dial_code: "+1" },
+  { name: "United Kingdom", code: "GB", dial_code: "+44" },
+];

@@ -1,0 +1,190 @@
+import React from "react";
+import { Mail, Clock, MapPin, Phone, Send, MessageCircle } from "lucide-react";
+import SubmitApplicationForm from "@/components/common/SubmitApplicationForm";
+import Header from "@/components/common/Header";
+import Footer from "@/components/Footer";
+import heroBg from "../assets/home/hero-home-bacground.svg";
+import ContactPageForm from "@/components/common/ContactPageForm";
+
+const ContactSection: React.FC = () => {
+  return (
+    <div>
+      <Header />
+      <section
+        className="py-28 md:h-[1300px]"
+        style={{
+          backgroundImage: `
+    linear-gradient(91.65deg, rgba(226,239,245,0.5) 1.34%, rgba(247,241,227,0.5) 98.66%),
+    linear-gradient(0deg, rgba(255,255,255,0.3) 0%, rgba(255,255,255,0) 100%),
+    url(${heroBg})
+  `,
+          backgroundBlendMode: "multiply, multiply, normal",
+          backgroundSize: "cover",
+          backgroundPosition: "bottom",
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h1 className="text-2xl md:text-4xl font-semibold text-sky-700">
+              Connect With Our Talent Solutions For Your ‘Right Job’
+            </h1>
+            <p className="text-neutral-600 mt-3 text-base font-heading">
+             Whether you're a candidate or an enterprise partner, our dedicated team is ready to provide immediate, expert assistance.
+            </p>
+          </div>
+          <ContactPageForm />
+          <div className="flex justify-center items-center">
+            {/* WhatsApp CTA */}
+            <div className="flex flex-col md:flex-row mt-8 p-5  bg-white md:w-[1100px] max-w-4xl gap-5 md:gap-20 rounded-lg  border-[5px] border-[#FFFFFFC4]">
+              <div>
+                <h2 className="text-gray-700 mb-3">Chat with Us on WhatsApp</h2>
+                <p>Get quick, personal support directly from our team.</p>
+              </div>
+
+              <a
+                href="https://wa.me/919999999999"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-xl font-medium transition-all flex-1"
+              >
+                <MessageCircle className="w-5 h-5" />
+                Chat on WhatsApp
+              </a>
+            </div>
+          </div>
+
+          {/* Contact Info
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12 bg-white p-8 rounded-2xl shadow-md">
+            <div className="flex flex-col items-center text-center">
+              <div className="flex gap-3">
+                <Phone className="text-yellow-500 w-7 h-7 mb-2" />
+                <h4 className="font-semibold text-gray-800">Contact Number</h4>
+              </div>
+
+              <div>
+                <p className="text-yellow-600 font-medium mt-1">
+                  +91 99999 99999
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-center">
+              <Mail className="text-yellow-500 w-7 h-7 mb-2" />
+
+              <div>
+                <h4 className="font-semibold text-gray-800">Send an Email</h4>
+                <p className="text-blue-600 mt-1">
+                  <a href="mailto:info@jobifyabroad.com">
+                    info@jobifyabroad.com
+                  </a>
+                  <br />
+                  <a href="mailto:support@jobifyabroad.com">
+                    support@jobifyabroad.com
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <Clock className="text-yellow-500 w-7 h-7 mb-2" />
+              <h4 className="font-semibold text-gray-800">Working Hours</h4>
+              <p className="text-gray-600 mt-1">
+                Mon–Fri: 9:00am–7:00pm
+                <br />
+                Sat: 9:00am–5:00pm
+                <br />
+                Sun: Closed
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <MapPin className="text-yellow-500 w-7 h-7 mb-2" />
+              <h4 className="font-semibold text-gray-800">Office</h4>
+              <p className="text-gray-600 mt-1">
+                A321, Master Mind 4, Royal Palms, Goregaon(E),
+                <br />
+                Mumbai, Maharashtra 400065 India
+              </p>
+            </div>
+          </div> */}
+          {/* Contact Section */}
+          <div className="flex items-center justify-center">
+            <div className="bg-white rounded-2xl shadow-md p-10 mt-12 max-w-[1000px] border-[5px] border-[#FFFFFFC4]">
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8 text-center md:text-left">
+              {/* Contact Number */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="flex items-center gap-3 mb-2">
+                  <Phone className="text-[#424242] w-6 h-6" />
+                  <h4 className="font-semibold text-[#424242] text-base">
+                    Contact Number
+                  </h4>
+                </div>
+                <p className="text-[#E9A908] font-medium text-base -mt-1 md:ml-10">
+                  +91 99999 99999
+                </p>
+              </div>
+
+              {/* Email */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="flex items-center gap-3 mb-2">
+                  <Mail className="text-[#424242] w-6 h-6" />
+                  <h4 className="font-semibold text-gray-800 text-lg">
+                    Send an Email
+                  </h4>
+                </div>
+                <div className="text-[#E9A908] text-base space-y-1">
+                  <a
+                    href="mailto:info@jobifyabroad.com"
+                    className="hover:underline"
+                  >
+                    info@jobifyabroad.com
+                  </a>
+                  <br />
+                  <a
+                    href="mailto:support@jobifyabroad.com"
+                    className="hover:underline"
+                  >
+                    support@jobifyabroad.com
+                  </a>
+                </div>
+              </div>
+
+              {/* Working Hours */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="flex items-center gap-3 mb-2">
+                  <Clock className="text-[#424242] w-6 h-6" />
+                  <h4 className="font-semibold text-gray-800 text-lg">
+                    Working Hours
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-base leading-relaxed md:ml-7">
+                  Monday to Friday:<br/> 9:00am – 7:00pm IST
+                </p>
+              </div>
+
+              {/* Office Address */}
+              <div className="flex flex-col items-center md:items-start">
+                <div className="flex items-center gap-3 mb-2">
+                  <MapPin className="text-[#424242] w-6 h-6" />
+                  <h4 className="font-semibold text-gray-800 text-lg">
+                    Office
+                  </h4>
+                </div>
+                <p className="text-gray-600 text-base leading-relaxed md:ml-7">
+                 A321, Master Mind 4, Royal Palms, Goregaon (E), Mumbai, Maharashtra 400065 India
+
+                </p>
+              </div>
+            </div>
+          </div>
+
+          </div>
+          
+        </div>
+      </section>
+      <Footer></Footer>
+    </div>
+  );
+};
+
+export default ContactSection;

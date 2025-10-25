@@ -1,6 +1,9 @@
 import { Briefcase, Facebook, Instagram, MessageCircle, Mail, Phone } from "lucide-react";
+import JobApplicationPopup from "./common/JobApplicationPopup";
+import { useState } from "react";
 
 const Footer = () => {
+  const [showPopup,setShowPopup]=useState(false);
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -49,12 +52,12 @@ const Footer = () => {
             <h4 className="text-lg font-heading font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <button 
-                  onClick={() => scrollToSection('about')}
+                <a href="/about-us"
+                  // onClick={() => scrollToSection('about')}
                   className="text-primary-foreground/80 hover:text-accent transition-colors"
                 >
                   About Us
-                </button>
+                </a>
               </li>
               <li>
                 <button 
@@ -65,12 +68,12 @@ const Footer = () => {
                 </button>
               </li>
               <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
+                <a href="/contact-us"
+                  // onClick={() => scrollToSection('contact')}
                   className="text-primary-foreground/80 hover:text-accent transition-colors"
                 >
                   Contact Us
-                </button>
+                </a>
               </li>
               <li>
                 <a 
@@ -137,11 +140,15 @@ const Footer = () => {
 
           {/* CTA */}
           <button 
-            onClick={() => scrollToSection('apply')}
+            // onClick={() => scrollToSection('apply')}
+            onClick={()=>setShowPopup(true)}
             className="bg-accent text-accent-foreground px-6 py-3 rounded-lg font-semibold hover:bg-accent/90 transition-colors"
           >
             Start Your Journey Today
           </button>
+          {showPopup && (
+              <JobApplicationPopup onClose={() => setShowPopup(false)} />
+            )}
         </div>
       </div>
 
