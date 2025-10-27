@@ -19,33 +19,33 @@ interface JobCategory {
 
 const jobCategories: JobCategory[] = [
   {
-    title: "Construction Workers",
-    subtitle: "Building, masonry, general construction",
+    title: "Construction & Infrastructure",
+    subtitle: "Building, masonry, structural fabrication, and general site work.",
     image: worker,
   },
   {
-    title: "Electricians & Plumbers",
-    subtitle: "Electrical work, plumbing, maintenance",
+    title: "Electrical & Plumbing Specialists",
+    subtitle: "Industrial and residential electrical installation, pipefitting, and maintenance.",
     image: electrician,
   },
   {
-    title: "Welders & Fabricators",
-    subtitle: "Metal work, weldind and fabrication",
+    title: "Welding & Fabrication Experts",
+    subtitle: "Precision metal fabrication, specialized industrial welding, and structural steel work.",
     image: welder,
   },
   {
-    title: "Drivers",
-    subtitle: "Heavy vehicle, truck, delivery drivers",
+    title: "Professional Drivers & Logistics",
+    subtitle: "Certified heavy vehicle, truck, trailer, and light delivery drivers.",
     image: driver,
   },
   {
-    title: "Hospitality Staff",
-    subtitle: "Hotel, restaurant, and housekeeping",
+    title: "Hospitality & Service Sector",
+    subtitle: " Hotel staff, catering, essential service roles, and facilities management.",
     image: hospitality,
   },
   {
-    title: "Skilled Technician",
-    subtitle: "Hotel, restaurant, and housekeeping",
+    title: "Technical Maintenance",
+    subtitle: "Machinery repair, industrial plant maintenance, and equipment troubleshooting.",
     image: technician,
   },
 ];
@@ -56,12 +56,11 @@ const JobCategories: FC = () => {
     <section className="bg-white md:py-16">
       <div className="max-w-7xl mx-auto px-4 md:px-8 text-center">
         {/* Heading */}
-        <h2 className="text-xl md:text-5xl font-semibold bg-gradient-to-r from-[#003366] to-[#0066CC] bg-clip-text text-transparent md:mb-5">
-          Job Categories
+        <h2 className="text-xl md:text-5xl font-semibold bg-gradient-to-r from-[#003366] to-[#0066CC] bg-clip-text text-transparent md:mb-5 leading-snug pb-1.5">
+          Explore High-Demand Job Categories
         </h2>
         <p className="text-[#130B0BE5] text-sm md:text-xl font-normal mx-auto mb-4">
-          Explore verified job opportunities across industries in Saudi Arabia.{" "}
-          No payment until you’re hired.
+         Connecting skilled Indian talent with verified roles across Saudi Arabia's fastest-growing sectors. 
         </p>
 
         {/* Swiper Section */}

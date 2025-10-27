@@ -76,7 +76,7 @@ const About: React.FC = () => {
 
         {/* About Section */}
         <div className="max-w-6xl mx-auto md:text-center mt-2 md:mt-10">
-          <h2 className="text-2xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#003366] to-[#0066CC]  mb-3 md:mb-6">
+          <h2 className="text-2xl md:text-5xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-[#003366] to-[#0066CC]  mb-3 md:mb-6 pb-1.5">
             About Jobify Global <br />
             Building the Workforce of Tomorrow, Today
           </h2>
@@ -148,7 +148,7 @@ const About: React.FC = () => {
         </div>
 
         {/* CTA Button */}
-        <div className="text-center mt-14">
+        <div className="text-center mt-14" id="contact">
           <button onClick={()=>setShowPopup(true)} className="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold px-8 py-3 rounded-full shadow-md transition">
             Start Your Application
           </button>

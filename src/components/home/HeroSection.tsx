@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
         </div>
         </div>
       </div>
-      <h1 className="text-xl md:text-5xl  font-heading font-semibold text-center bg-gradient-to-r from-[#003366] to-[#0066CC] bg-clip-text text-transparent leading-tight">
+      <h1 className="text-xl md:text-5xl  font-heading font-semibold text-center bg-gradient-to-r from-[#003366] to-[#0066CC] bg-clip-text text-transparent pb-1.5">
       High-Value Jobs in Saudi Arabia
       </h1>
       <p className="text-center text-[rgba(19, 11, 11, 0.90)] mt-3 text-sm md:text-xl font-body font-normal">

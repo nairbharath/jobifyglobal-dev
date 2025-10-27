@@ -9,11 +9,10 @@ const SubmitCVSection: FC = () => {
         {/* LEFT CONTENT */}
         <div className="text-center md:text-left">
           <h2 className="text-lg md:text-4xl font-semibold text-[#036] mt-10  mb-1 md:mb-4">
-            Don&apos;t see your skill category?
+          Don't See Your Skill Category Listed?
           </h2>
           <p className="text-[#2A2424]  text-sm md:text-xl font-normal mb-8 max-w-lg">
-            We&apos;re constantly expanding our opportunities. Submit your CV
-            and we&apos;ll match you with suitable positions.
+            We’re onboarding new verified employers and niche roles. Browse our database of current vacancies to explore opportunities for skilled professionals like you.
           </p>
           <button onClick={()=>setShowPopup(true)} className="w-full md:w-fit  bg-[#E9A908] hover:bg-[#C58E1C] text-white font-semibold py-3 px-8 rounded-lg transition-all">
             Submit Your CV

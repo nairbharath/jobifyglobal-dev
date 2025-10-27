@@ -52,61 +52,6 @@ const ContactSection: React.FC = () => {
               </a>
             </div>
           </div>
-
-          {/* Contact Info
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-12 bg-white p-8 rounded-2xl shadow-md">
-            <div className="flex flex-col items-center text-center">
-              <div className="flex gap-3">
-                <Phone className="text-yellow-500 w-7 h-7 mb-2" />
-                <h4 className="font-semibold text-gray-800">Contact Number</h4>
-              </div>
-
-              <div>
-                <p className="text-yellow-600 font-medium mt-1">
-                  +91 99999 99999
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-center">
-              <Mail className="text-yellow-500 w-7 h-7 mb-2" />
-
-              <div>
-                <h4 className="font-semibold text-gray-800">Send an Email</h4>
-                <p className="text-blue-600 mt-1">
-                  <a href="mailto:info@jobifyabroad.com">
-                    info@jobifyabroad.com
-                  </a>
-                  <br />
-                  <a href="mailto:support@jobifyabroad.com">
-                    support@jobifyabroad.com
-                  </a>
-                </p>
-              </div>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <Clock className="text-yellow-500 w-7 h-7 mb-2" />
-              <h4 className="font-semibold text-gray-800">Working Hours</h4>
-              <p className="text-gray-600 mt-1">
-                Mon–Fri: 9:00am–7:00pm
-                <br />
-                Sat: 9:00am–5:00pm
-                <br />
-                Sun: Closed
-              </p>
-            </div>
-
-            <div className="flex flex-col items-center text-center">
-              <MapPin className="text-yellow-500 w-7 h-7 mb-2" />
-              <h4 className="font-semibold text-gray-800">Office</h4>
-              <p className="text-gray-600 mt-1">
-                A321, Master Mind 4, Royal Palms, Goregaon(E),
-                <br />
-                Mumbai, Maharashtra 400065 India
-              </p>
-            </div>
-          </div> */}
           {/* Contact Section */}
           <div className="flex items-center justify-center">
             <div className="bg-white rounded-2xl shadow-md p-10 mt-12 max-w-[1000px] border-[5px] border-[#FFFFFFC4]">
@@ -119,9 +64,9 @@ const ContactSection: React.FC = () => {
                     Contact Number
                   </h4>
                 </div>
-                <p className="text-[#E9A908] font-medium text-base -mt-1 md:ml-10">
+                <a  href="tel: +91 99999 99999"className="text-[#E9A908] font-medium text-base -mt-1 md:ml-10">
                   +91 99999 99999
-                </p>
+                </a>
               </div>
 
               {/* Email */}

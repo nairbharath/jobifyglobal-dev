@@ -60,6 +60,12 @@ const JobApplicationPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
   const form: HTMLFormElement | null = document.getElementById(
     `form`
   ) as HTMLFormElement;
+  const redirectField = form.querySelector<HTMLInputElement>(
+    'input[name="zf_redirect_url"]'
+  );
+  if (redirectField) {
+    redirectField.value = `${window.location.origin}/thank-you`;
+  }
   form?.submit();
   // Close popup after form submission
   if (onClose) {
@@ -149,7 +155,7 @@ const JobApplicationPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
                 onChange={handleChange}
                 value={formData.PhoneNumber_countrycodeval}
                 required
-                className="border bg-[#FBFBFB] border-gray-300 rounded-l-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
+                className="border bg-[#FBFBFB] text-black border-gray-300 rounded-l-md px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#0066CC]"
               >
                 {countryCodes.map((country) => (
                   <option key={country.code} value={country.dial_code}>

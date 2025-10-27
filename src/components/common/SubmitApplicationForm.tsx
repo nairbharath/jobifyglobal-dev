@@ -57,6 +57,13 @@ const SubmitApplicationForm = () => {
     const form: HTMLFormElement | null = document.getElementById(
       `form-3`
     ) as HTMLFormElement;
+     // Set the redirect URL dynamically
+  const redirectField = form.querySelector<HTMLInputElement>(
+    'input[name="zf_redirect_url"]'
+  );
+  if (redirectField) {
+    redirectField.value = `${window.location.origin}/thank-you`;
+  }
     form?.submit();
   };
 

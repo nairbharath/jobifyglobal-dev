@@ -61,12 +61,18 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
     const form: HTMLFormElement | null = document.getElementById(
       `form-1`
     ) as HTMLFormElement;
+    const redirectField = form.querySelector<HTMLInputElement>(
+    'input[name="zf_redirect_url"]'
+  );
+  if (redirectField) {
+    redirectField.value = `${window.location.origin}/thank-you`;
+  }
     form?.submit();
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50 px-4">
-      <div className="relative bg-white rounded-2xl shadow-lg w-full max-w-md p-6 sm:p-8 animate-fadeIn">
+      <div className="relative bg-white rounded-2xl shadow-lg w-full max-w-md p-6 sm:p-8 animate-fadeIn max-h-[95vh]">
         {/* Close Button */}
         <button
           onClick={onClose}
@@ -84,7 +90,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
         </p>
 
         {/* Icons Row */}
-        <div className="flex justify-center gap-6 mb-6 text-sm font-medium text-[#003366]">
+        {/* <div className="flex justify-center gap-6 mb-6 text-sm font-medium text-[#003366]">
           <div className="flex flex-col items-center">
             <img src={soldierIcon} alt="Workers" className="w-6 h-6 mb-1" />
             <p>1000+ Workers</p>
@@ -97,7 +103,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
             <img src={supportIcon} alt="Support" className="w-6 h-6 mb-1" />
             <p>24/7 Support</p>
           </div>
-        </div>
+        </div> */}
 
         {/* Form */}
         <form
@@ -265,7 +271,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
           </button>
 
           {/* No Upfront Payment Note */}
-          <div className="flex flex-col items-center text-center mt-2">
+          {/* <div className="flex flex-col items-center text-center mt-2">
             <p className="flex items-center text-[#003366] font-medium text-sm">
               <CheckCircle2 className="w-4 h-4 mr-2 text-[#003366]" />
               No Upfront Payment
@@ -274,7 +280,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
               We only charge after you secure your job and arrive in Saudi
               Arabia. Your success is our guarantee.
             </p>
-          </div>
+          </div> */}
         </form>
       </div>
     </div>

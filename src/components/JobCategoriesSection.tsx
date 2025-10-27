@@ -48,7 +48,7 @@ const JobCategoriesSection = () => {
     <section id="jobCategories" className="section-padding bg-secondary/30">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary mb-6">
+          <h2 className="text-3xl md:text-5xl font-heading font-bold text-primary  mb-6">
             Job Categories
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">

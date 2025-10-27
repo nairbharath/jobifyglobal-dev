@@ -58,13 +58,19 @@ const ContactPageForm = () => {
     const form: HTMLFormElement | null = document.getElementById(
       `form`
     ) as HTMLFormElement;
+    const redirectField = form.querySelector<HTMLInputElement>(
+    'input[name="zf_redirect_url"]'
+  );
+  if (redirectField) {
+    redirectField.value = `${window.location.origin}/thank-you`;
+  }
     form?.submit();
   };
 
   return (
     <div>
       {/* Form Card */}
-      <div className="max-w-4xl mx-3 md:mx-auto mt-10 bg-white rounded-2xl shadow-md p-8 border-[5px] border-[#FFFFFFC4]">
+      <div className="max-w-4xl mx-3 md:mx-auto mt-10 bg-white rounded-2xl shadow-md p-8 border-[5px] border-[#FFFFFFC4]" id="contact">
         {/* <p className="text-center mb-5 text-lg">Ready to start your career in Saudi Arabia? Submit your application  and we'll match you with the right opportunities.</p> */}
         <form
           action="https://forms.zohopublic.in/jobifyglobal/form/JobifyGlobalApplication/formperma/-uO2JaZtKh6HhZm7axeKT8CVEazw7cl0CNRpluKfGjs/htmlRecords/submit"
