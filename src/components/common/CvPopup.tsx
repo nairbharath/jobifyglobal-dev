@@ -6,6 +6,8 @@ import supportIcon from "../../assets/home/supportIcon.svg";
 import { countryCodes } from "@/data/countryCodes";
 import { jobCategories } from "@/data/jobCategories";
 const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
+
+  const [monthYear, setMonthYear] = useState("");
   const [fileName, setFileName] = useState("");
   const [utmParams, setUtmParams] = useState({
       utm_source: "",
@@ -18,6 +20,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
   
     // Capture UTM parameters on component mount
     useEffect(() => {
+      
       const urlParams = new URLSearchParams(window.location.search);
       setUtmParams({
         utm_source: urlParams.get('utm_source') || '',
@@ -27,6 +30,17 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
         utm_content: urlParams.get('utm_content') || '',
         gclid: urlParams.get('gclid') || '',
       });
+
+
+      // Asia/Kolkata as you’re in India
+  const d = new Date();
+  const fmt = d.toLocaleString("en-GB", {
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  }); // e.g., "Oct 2025"
+  setMonthYear(fmt.replace(" ", "-")); // "Oct-2025"
+
     }, []);
   const [formData, setFormData] = useState({
     SingleLine: "",
@@ -126,6 +140,7 @@ const CVPopup: FC<{ onClose: () => void }> = ({ onClose }) => {
           <input type="hidden" name="utm_content" value={utmParams.utm_content} />
           <input type="hidden" name="gclid" value={utmParams.gclid} />
           <input type="hidden" name="client_code" value="asaqi" />
+          <input type="hidden" name="MonthYear" value={monthYear} />
           {/* Full Name */}
           <div>
             <label className="block text-sm font-semibold text-[#003366] mb-1 text-left">

@@ -25,7 +25,7 @@ const testimonials: Testimonial[] = [
     location: "Dubai, UAE",
     salary: "₹60,000/month",
     testimonial:
-      "Thanks to Jobify, I secured my dream job in Dubai within weeks! The visa process was smooth, and the team guided me at every step.",
+      "Thanks to Jobify Global, I secured my dream job in Dubai within weeks! The visa process was smooth, and the team guided me at every step.",
     image: testimonialIcon,
   },
   {
@@ -34,7 +34,7 @@ const testimonials: Testimonial[] = [
     location: "Doha, Qatar",
     salary: "₹48,000/month",
     testimonial:
-      "I never thought finding a good overseas job would be this easy. Jobify helped me with all documentation and interview preparation.",
+      "I never thought finding a good overseas job would be this easy. Jobify Global helped me with all documentation and interview preparation.",
     image: testimonialIcon,
   },
   {
@@ -43,7 +43,7 @@ const testimonials: Testimonial[] = [
     location: "Muscat, Oman",
     salary: "₹75,000/month",
     testimonial:
-      "Excellent service! The Jobify team arranged interviews quickly, and I’m now working in a reputed company in Oman.",
+      "Excellent service! The Jobify Global team arranged interviews quickly, and I’m now working in a reputed company in Oman.",
     image: testimonialIcon,
   },
   {
@@ -52,7 +52,7 @@ const testimonials: Testimonial[] = [
     location: "Riyadh, Saudi Arabia",
     salary: "₹85,000/month",
     testimonial:
-      "Professional and transparent process. From document verification to onboarding, Jobify made everything stress-free.",
+      "Professional and transparent process. From document verification to onboarding, Jobify Global made everything stress-free.",
     image: testimonialIcon,
   },
   {
@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
     location: "Kuwait City, Kuwait",
     salary: "₹55,000/month",
     testimonial:
-      "I was referred by a friend, and within a month I had my job offer. Highly recommend Jobify for anyone looking abroad.",
+      "I was referred by a friend, and within a month I had my job offer. Highly recommend Jobify Global for anyone looking abroad.",
     image: testimonialIcon,
   },
 ];

@@ -12,7 +12,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/919999999999', '_blank');
+    window.open('https://wa.me/919967262012', '_blank');
   };
 
   return (
@@ -38,11 +38,17 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="flex items-center gap-3">
                 <Phone className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80">+91 9999999999</span>
+                <span className="text-primary-foreground/80">+91 9967262012</span>
               </div>
               <div className="flex items-center gap-3">
                 <Mail className="w-4 h-4 text-accent" />
-                <span className="text-primary-foreground/80">info@jobifyabroad.com</span>
+                {/* <span className="text-primary-foreground/80">hello@jobifyglobal.in</span> */}
+                 <a 
+                      href="mailto:hello@jobifyglobal.in?subject=Job%20Inquiry%20" 
+                      className=" hover:text-accent transition-colors block"
+                    >
+                      hello@jobifyglobal.in
+                    </a>
               </div>
             </div>
           </div>
@@ -115,7 +121,7 @@ const Footer = () => {
             <span className="text-primary-foreground/80 font-medium">Follow Us:</span>
             <div className="flex gap-3">
               <a 
-                href="#" 
+                href="https://www.facebook.com/share/17dh2kaPJE/?mibextid=wwXIfr" 
                 className="w-10 h-10 bg-primary-foreground/10 hover:bg-accent rounded-full flex items-center justify-center transition-colors"
               >
                 <Facebook className="w-5 h-5" />

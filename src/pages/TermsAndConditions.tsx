@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft, Mail, MapPin, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/common/Header";
 
 const TermsAndConditions = () => {
   return (
@@ -11,7 +11,7 @@ const TermsAndConditions = () => {
         <title>Terms & Conditions | Mawbis International LLP</title>
         <meta 
           name="description" 
-          content="Read the official terms and conditions of Mawbis International LLP regarding the use of jobifyabroad.com and our overseas employment facilitation services." 
+          content="Read the official terms and conditions of Mawbis International LLP regarding the use of jobifyglobal.in and our overseas employment facilitation services." 
         />
       </Helmet>
       
@@ -51,7 +51,7 @@ const TermsAndConditions = () => {
                 <div className="space-y-4 text-foreground/80 leading-relaxed">
                   <p>
                     These Terms & Conditions ("Terms") govern your use of the website{" "}
-                    <span className="font-semibold text-foreground">jobifyabroad.com</span>, owned and operated by Mawbis International LLP ("we," "our," or "us").
+                    <span className="font-semibold text-foreground">jobifyglobal.in</span>, owned and operated by Mawbis International LLP ("we," "our," or "us").
                   </p>
                   <p>
                     By using our website or submitting any information, you agree to be bound by these Terms.
@@ -208,13 +208,13 @@ const TermsAndConditions = () => {
                         href="mailto:support@mawbisglobal.in" 
                         className="text-accent hover:underline font-semibold"
                       >
-                        support@mawbisglobal.in
+                        support@jobifyglobal.in
                       </a>
                     </div>
                     
                     <div className="flex items-center gap-3">
                       <Globe className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="font-semibold">jobifyabroad.com</span>
+                      <span className="font-semibold">jobifyglobal.in</span>
                     </div>
                   </div>
                   

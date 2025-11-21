@@ -6,6 +6,14 @@ import Footer from "@/components/Footer";
 import heroBg from "../assets/home/hero-home-bacground.svg";
 import ContactPageForm from "@/components/common/ContactPageForm";
 
+
+const address =
+  "A321, Master Mind 4, Royal Palms, Goregaon (E), Mumbai, Maharashtra 400065 India";
+
+const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  address
+)}`;
+
 const ContactSection: React.FC = () => {
   return (
     <div>
@@ -29,7 +37,8 @@ const ContactSection: React.FC = () => {
               Connect With Our Talent Solutions For Your ‘Right Job’
             </h1>
             <p className="text-neutral-600 mt-3 text-base font-heading">
-             Whether you're a candidate or an enterprise partner, our dedicated team is ready to provide immediate, expert assistance.
+              Whether you're a candidate or an enterprise partner, our dedicated
+              team is ready to provide immediate, expert assistance.
             </p>
           </div>
           <ContactPageForm />
@@ -42,7 +51,7 @@ const ContactSection: React.FC = () => {
               </div>
 
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/919967262012"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 bg-green-500 hover:bg-green-600 text-white py-3 px-6 rounded-xl font-medium transition-all flex-1"
@@ -64,67 +73,81 @@ const ContactSection: React.FC = () => {
                     Contact Number
                   </h4>
                 </div>
-                <a  href="tel: +91 99999 99999"className="text-[#E9A908] font-medium text-base -mt-1 md:ml-10">
-                  +91 99999 99999
+                <a  href="tel: +91 99672 62012"className="text-[#E9A908] font-medium text-base -mt-1 md:ml-10">
+                  +91 99672 62012
                 </a>
               </div>
 
-              {/* Email */}
-              <div className="flex flex-col items-center md:items-start">
-                <div className="flex items-center gap-3 mb-2">
-                  <Mail className="text-[#424242] w-6 h-6" />
-                  <h4 className="font-semibold text-gray-800 text-lg">
-                    Send an Email
-                  </h4>
+                {/* Email */}
+                <div className="flex flex-col items-center md:items-start">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Mail className="text-[#424242] w-6 h-6" />
+                    <h4 className="font-semibold text-gray-800 text-lg">
+                      Send an Email
+                    </h4>
+                  </div>
+                  <div className="text-[#E9A908] text-base space-y-1">
+                    <a
+                      href="mailto:support@jobifyglobal.in?subject=Support%20Inquiry%20"
+                      className="hover:underline"
+                    >
+                      support@jobifyglobal.in
+                    </a>
+                    <br />
+                    <a
+                      href="mailto:careers@jobifyglobal.in?subject=Career%20Inquiry%20"
+                      className="hover:underline"
+                    >
+                      careers@jobifyglobal.in
+                    </a>
+                  </div>
                 </div>
-                <div className="text-[#E9A908] text-base space-y-1">
-                  <a
-                    href="mailto:info@jobifyabroad.com"
-                    className="hover:underline"
-                  >
-                    info@jobifyabroad.com
-                  </a>
-                  <br />
-                  <a
-                    href="mailto:support@jobifyabroad.com"
-                    className="hover:underline"
-                  >
-                    support@jobifyabroad.com
-                  </a>
-                </div>
-              </div>
 
-              {/* Working Hours */}
-              <div className="flex flex-col items-center md:items-start">
-                <div className="flex items-center gap-3 mb-2">
-                  <Clock className="text-[#424242] w-6 h-6" />
-                  <h4 className="font-semibold text-gray-800 text-lg">
-                    Working Hours
-                  </h4>
+                {/* Working Hours */}
+                <div className="flex flex-col items-center md:items-start">
+                  <div className="flex items-center gap-3 mb-2">
+                    <Clock className="text-[#424242] w-6 h-6" />
+                    <h4 className="font-semibold text-gray-800 text-lg">
+                      Working Hours
+                    </h4>
+                  </div>
+                  <p className="text-gray-600 text-base leading-relaxed md:ml-7">
+                    Monday to Friday:
+                    <br /> 9:00am – 7:00pm IST
+                  </p>
                 </div>
-                <p className="text-gray-600 text-base leading-relaxed md:ml-7">
-                  Monday to Friday:<br/> 9:00am – 7:00pm IST
-                </p>
-              </div>
 
-              {/* Office Address */}
-              <div className="flex flex-col items-center md:items-start">
-                <div className="flex items-center gap-3 mb-2">
-                  <MapPin className="text-[#424242] w-6 h-6" />
-                  <h4 className="font-semibold text-gray-800 text-lg">
-                    Office
-                  </h4>
-                </div>
-                <p className="text-gray-600 text-base leading-relaxed md:ml-7">
+                {/* Office Address */}
+                <div className="flex flex-col items-center md:items-start">
+                  <div className="flex items-center gap-3 mb-2">
+                    <MapPin className="text-[#424242] w-6 h-6" />
+                    <h4 className="font-semibold text-gray-800 text-lg">
+                      Office
+                    </h4>
+                  </div>
+                  {/* <p className="text-gray-600 text-base leading-relaxed md:ml-7">
                  A321, Master Mind 4, Royal Palms, Goregaon (E), Mumbai, Maharashtra 400065 India
 
-                </p>
+                </p> */}
+                  <a
+                    href={mapsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-accent transition-colors block"
+                    aria-label={`Open address in Google Maps: ${address}`}
+                  >
+                    A321, Master Mind 4, Royal Palms,
+                    <br />
+                    Goregaon (E),
+                    <br />
+                    Mumbai, Maharashtra 400065
+                    <br />
+                    India
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-
-          </div>
-          
         </div>
       </section>
       <Footer></Footer>

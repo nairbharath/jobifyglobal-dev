@@ -1,8 +1,8 @@
 import { Helmet } from "react-helmet";
-import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { ArrowLeft, Mail, MapPin, Globe } from "lucide-react";
 import { Link } from "react-router-dom";
+import Header from "@/components/common/Header";
 
 const PrivacyPolicy = () => {
   return (
@@ -51,7 +51,7 @@ const PrivacyPolicy = () => {
                 <div className="space-y-4 text-foreground/80 leading-relaxed">
                   <p>
                     We collect the information that you provide when you submit your application or contact us through our website{" "}
-                    <span className="font-semibold text-foreground">jobifyabroad.com</span>. This includes your name, phone number, email address, uploaded CV, and job preferences.
+                    <span className="font-semibold text-foreground">jobifyglobal.in</span>. This includes your name, phone number, email address, uploaded CV, and job preferences.
                   </p>
                   <p>
                     We may also collect automatic information such as IP address, browser type, and usage logs to improve our site performance.
@@ -116,7 +116,7 @@ const PrivacyPolicy = () => {
                       href="mailto:support@mawbisglobal.in" 
                       className="text-accent hover:underline font-semibold"
                     >
-                      support@mawbisglobal.in
+                      support@jobifyglobal.in
                     </a>.
                   </p>
                   <p>
@@ -168,13 +168,13 @@ const PrivacyPolicy = () => {
                         href="mailto:support@mawbisglobal.in" 
                         className="text-accent hover:underline font-semibold"
                       >
-                        support@mawbisglobal.in
+                        support@jobifyglobal.in
                       </a>
                     </div>
                     
                     <div className="flex items-center gap-3">
                       <Globe className="w-5 h-5 text-accent flex-shrink-0" />
-                      <span className="font-semibold">jobifyabroad.com</span>
+                      <span className="font-semibold">jobifyglobal.in</span>
                     </div>
                   </div>
                 </div>

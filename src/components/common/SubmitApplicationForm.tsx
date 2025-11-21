@@ -3,7 +3,12 @@ import { jobCategories } from "@/data/jobCategories";
 import { CircleCheckBig, Upload } from "lucide-react";
 import { useEffect, useState } from "react";
 
+
+
+
 const SubmitApplicationForm = () => {
+  const [monthYear, setMonthYear] = useState("");
+  
   const [formData, setFormData] = useState({
     SingleLine: "",
     PhoneNumber_countrycodeval: "",
@@ -33,6 +38,16 @@ const SubmitApplicationForm = () => {
         utm_content: urlParams.get('utm_content') || '',
         gclid: urlParams.get('gclid') || '',
       });
+
+      // Asia/Kolkata as you’re in India
+  const d = new Date();
+  const fmt = d.toLocaleString("en-GB", {
+    month: "short",
+    year: "numeric",
+    timeZone: "Asia/Kolkata",
+  }); // e.g., "Oct 2025"
+  setMonthYear(fmt.replace(" ", "-")); // "Oct-2025"
+
     }, []);
   const [fileName, setFileName] = useState("");
   const handleChange = (
@@ -99,6 +114,8 @@ const SubmitApplicationForm = () => {
           <input type="hidden" name="utm_content" value={utmParams.utm_content} />
           <input type="hidden" name="gclid" value={utmParams.gclid} />
           <input type="hidden" name="client_code" value="asaqi" />
+          <input type="hidden" name="MonthYear" value={monthYear} />
+
           <div>
             <label className="block text-sm font-semibold text-[#424242] mb-1">
               Full Name*

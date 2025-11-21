@@ -333,13 +333,13 @@ const ContactSection = () => {
                       href="tel:+918123456789" 
                       className="text-muted-foreground hover:text-accent transition-colors md:pointer-events-none md:cursor-default block"
                     >
-                      +91 99999 99999
+                      +91 99672 62012
                     </a>
                     <a 
                       href="tel:+919876543210" 
                       className="text-muted-foreground hover:text-accent transition-colors md:pointer-events-none md:cursor-default block"
                     >
-                      +91 99999 99999
+                      +91 99672 62012
                     </a>
                   </div>
                 </div>
@@ -351,16 +351,16 @@ const ContactSection = () => {
                   <div>
                     <h4 className="font-semibold text-primary mb-1">Email</h4>
                     <a 
-                      href="mailto:info@jobifyabroad.com?subject=Job%20Inquiry%20from%20JobifyGlobal%20Website" 
+                      href="mailto:apply@jobifyglobal.in?subject=Job%20Inquiry%20from%20JobifyGlobal%20Website" 
                       className="text-muted-foreground hover:text-accent transition-colors block"
                     >
-                      info@jobifyabroad.com
+                      apply@jobifyglobal.in
                     </a>
                     <a 
-                      href="mailto:support@jobifyabroad.com?subject=Job%20Inquiry%20from%20JobifyGlobal%20Website" 
+                      href="mailto:support@jobifyglobal.in?subject=Job%20Inquiry%20from%20JobifyGlobal%20Website" 
                       className="text-muted-foreground hover:text-accent transition-colors block"
                     >
-                      support@jobifyabroad.com
+                      support@jobifyglobal.in
                     </a>
                   </div>
                 </div>
